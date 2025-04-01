@@ -17,9 +17,9 @@
 <body class="">
   <section class="w-full overflow-hidden">
     <header id="header"
-      class="bg-[rgba(0,0,0,.1)] backdrop-blur-md z-20 w-full left-0 right-0 fixed top-0 transition-all duration-300">
+      class="bg-[#fff] backdrop-blur-md z-20 w-full left-0 right-0 fixed top-0 transition-all duration-300">
       <nav class="max-w-7xl m-auto px-3 py-4 flex justify-between items-center">
-        <span><img src="../../asset/image/eastman-logo.png" height="auto" width="250px" alt="logo"
+        <span><img src="../../asset/image/logo.png" height="auto" width="auto" alt="logo"
             class="w-[150px] sm:w-[190px] md:w-[250px]" /></span>
         <ul class="flex gap-4 md:gap-8 justify-center items-center">
           <span class="overflow-hidden hidden md:inline-flex  rounded-full bg__light px-3 p-2  items-center">
@@ -29,63 +29,70 @@
           </span>
           <div class="dropdown">
             <button type="button" id="dropdown-btn"
-            class="text__primary bg__light overflow-hidden rounded-full cursor-pointer text-sm md:text-lg px-3 py-1 md:py-2">
-            EN <i class="fa-solid fa-globe text-sm md:text-lg text_dark ml-2"></i>
-          </button>
+              class="text_dark bg__light overflow-hidden rounded-full cursor-pointer text-sm md:text-lg px-3 py-1 md:py-2">
+              EN <i class="fa-solid fa-globe text-sm md:text-lg text_dark ml-2"></i>
+            </button>
 
-          <div class="dropdown-content" id="dropdown-content">
-            <div data-value="en">English</div>
-            <div data-value="fr">Français</div>
-            <div data-value="es">Español</div>
-            <div data-value="de">Deutsch</div>
+            <div class="dropdown-content" id="dropdown-content">
+              <div data-value="en">English</div>
+              <div data-value="zh-CN">中文 (Chinese)</div>
+
+            </div>
           </div>
-          </div>
-          
+
           </li>
           <li>
             <button id="openSidebar"
-              class="text__primary bg__light overflow-hidden rounded-full cursor-pointer text-sm md:text-lg px-3 py-1 md:py-2">
+              class="text_dark bg__light overflow-hidden rounded-full cursor-pointer text-sm md:text-lg px-3 py-1 md:py-2">
               Menu <i class="ml-2 fa-solid fa-bars text-sm md:text-lg text_dark"></i>
             </button>
           </li>
         </ul>
       </nav>
     </header>
-    <div class="relative home_slider_container">
-      <div style="z-index: 2" class="absolute top-0 left-0 right-0 bottom-0 bg-[rgba(0,0,0,.3)]"></div>
+    <div class="relative home_slider_container pt-20">
+      <div style="z-index: 2" class="absolute top-0 left-0 right-0 bottom-0 bg-[rgba(0,0,0,.6)]"></div>
       <div
         class="absolute max-w-[700px] w-full z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center">
-        <h2 class="text-4xl md:text-5xl text-white text-center font-bold mb-3">
+        <h2 class="text-4xl md:text-5xl lg:text-6xl text-white text-center font-bold mb-3">
           Innovarting to build
           <span class="text-center text__primary">a </span>
           <span class="block text-center text__primary"> better world</span>
         </h2>
-        <p class="text-base font-medium text-center text-white px-10">
+        <p class="text-base tracking-wider font-medium text-center text-white px-20">
           Eastman’s advances across industries such as agriculture, consumer
           goods, personal care, transportation and textiles are helping
           improve the quality of life for consumers around the world.
         </p>
         <a href="#"
-          class="mt-10 bg__primary text-white hover:bg__dark text-lg px-5 cursor-pointer select-none py-2 rounded-full">Learn
+          class="mt-10 bg__primary text-dark hover:bg__dark text-lg px-5 cursor-pointer select-none py-2 rounded-full">Learn
           More</a>
       </div>
       <div class="home_slider w-[100vw] overflow-hidden">
         <div class="w-full">
-          <img src="https://images.freekaamaal.com/sticky/1743229923_c741d4f38ae4be602699.webp" class="h-[100vh] w-full"
+          <video autoplay loop muted playsinline width="100%" height="100vh">
+            <source src="../../asset/image/banner_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="w-full">
+          <img src="../../asset/image/banner_1.jpg" class="h-[100vh] w-full"
             alt="image" />
         </div>
         <div class="w-full">
-          <img src="https://images.freekaamaal.com/sticky/1743229923_c741d4f38ae4be602699.webp" class="h-[100vh] w-full"
+          <img src="../../asset/image/banner_2.jpg" class="h-[100vh] w-full"
             alt="image" />
         </div>
         <div class="w-full">
-          <img src="https://images.freekaamaal.com/sticky/1743229923_c741d4f38ae4be602699.webp" class="h-[100vh] w-full"
+          <img src="../../asset/image/banner_3.jpg" class="h-[100vh] w-full"
             alt="image" />
         </div>
         <div class="w-full">
-          <img src="https://images.freekaamaal.com/sticky/1743229923_c741d4f38ae4be602699.webp" class="h-[100vh] w-full"
+          <img src="../../asset/image/banner_4.jpg" class="h-[100vh] w-full"
             alt="image" />
         </div>
+       
+        
       </div>
     </div>
   </section>
@@ -144,35 +151,19 @@
     </div>
 
   </section>
-  <section class="w-full overflow-hidden">
+  <section class="w-full overflow-hidden py-10">
     <div class="max-w-7xl m-auto px-3 py-4">
-      <h2 class="text-4xl md:text-5xl font-bold text_dark py-3 border-b-[1px] border-[#005695] mb-5">
-        Eastman at a glance
-      </h2>
-      <div class="flex justify-start gap-3 overflow-x-auto overflow-y-hidden w-full hide_scroolvar">
-        <div
-          class="flex gap-3 group justify-between items-start transition-transform duration-300 hover:scale-110 p-2 w-[300px] ">
-          <img src="https://images.freekaamaal.com/sticky/1743229923_c741d4f38ae4be602699.webp"
-            class="max-w-[120px] transition-transform duration-300 group-hover:scale-110" />
-
-          <h3
-            class="line-clamp-3 text-base text_dark font-thin relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-300 group-hover:after:w-full group-hover:underline">
-            Eight specialty PET resins from Eastman receive RecyClass Approval
-          </h3>
-        </div>
-        <div
-          class="flex gap-3 group justify-between items-start transition-transform duration-300 hover:scale-110 p-2 w-[300px] ">
-          <img src="https://images.freekaamaal.com/sticky/1743229923_c741d4f38ae4be602699.webp"
-            class="max-w-[120px] transition-transform duration-300 group-hover:scale-110" />
-
-          <h3
-            class="line-clamp-3 text-base text_dark font-thin relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-300 group-hover:after:w-full group-hover:underline">
-            Eight specialty PET resins from Eastman receive RecyClass Approval
-          </h3>
-        </div>
-      </div>
+      <p class="text-lg text-center">Quantum Group is leading to the fields where human beings require advancement
+        across
+        industries like construction, Household &amp; Cleaning Solutions, agriculture, consumer goods,
+        personal care, transportation, Industrial Coatings, Printing Inks, Sealants textile &amp; Leather
+        and many more are improving the quality of life of consumers around the world.</p>
     </div>
   </section>
+
+
+
+
   <section class="w-full bg__primary mt-20 flex flex-col-reverse lg:grid lg:grid-cols-2   overflow-hidden">
     <div class="flex lg:justify-end py-16 lg:pt-16">
       <div class="max-w-[600px] flex flex-col items-start">
@@ -244,74 +235,10 @@
     </div>
   </section>
 
-  <section class="w-full bg-gray-100 py-10 mt-20 overflow-hidden">
-    <div class="max-w-7xl m-auto px-3 py-4">
-      <div class="flex justify-between items-center">
-        <h2 class="text-5xl font-bold text_dark py-3 border-b-[1px] border-[#005695] mb-5">
-          Latest news
-        </h2>
-        <a href="#">See all news <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-5 gap-10">
-        <div
-          class="flex group gap-3 cursor-pointer flex-col rounded-md overflow-hidden bg-white justify-between items-start transition-transform duration-300">
-          <img src="https://images.freekaamaal.com/sticky/1743229923_c741d4f38ae4be602699.webp"
-            class="w-full transition-transform" />
-          <div class="p-3">
-            <h3 class="text-dark text-2xl font-medium mb-3">
-              Six Months after Hurricane Helene Eastman team still providing
-              help
-            </h3>
-            <p class="text-sm group-hover:underline text-gray-400 tracking-wide line-clamp-6 mb-4">
-              After days of cutting trails, backpacking in supplies and doing
-              anything he could to help mountain residents cut off from the
-              outside world after Hurricane Helene, Josh Callahan was
-              exhausted. When he pulled into the parking lot for work at
-              Eastman’s Kingsport, Tennessee, manufacturing site, he finally
-              broke down. All he could think of was relatives without power or
-              access to water. They desperately needed gasoline for generators
-              to power their well pumps.
-            </p>
-            <p class="text-sm text-gray-700 tracking-wide">March 27, 2025</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="w-full mt-20 lg:grid grid-cols-2 lg:h-[110vh] overflow-hidden">
-    <div
-      class="col-span-1 relative bg-[url('https://images.freekaamaal.com/featured_images/150163_fff(41).jpg')] bg-no-repeat bg-center bg-cover h-[50vh] lg:h-auto">
-    </div>
 
-    <div class="bg-[#198754]">
-      <div
-        class="relative bg-[url('https://images.freekaamaal.com/featured_images/150163_fff(41).jpg')] bg-no-repeat bg-center bg-cover h-[60vh]">
-      </div>
-      <div class="flex justify-center py-16 ">
-        <div class="max-w-[600px] flex flex-col items-start">
-          <h2 class="text-5xl text-white text-left font-bold mb-3">
-            Transforming
-            <span class="text-white opacity-45">more than </span>
-            <span class="block text-left text-white opacity-45">
-              materials</span>
-          </h2>
-          <p class="text-base font-medium text-left mt-5 pr-10 text-white">
-            At Eastman, every insight, leading breakthrough and innovation is
-            achieved through collaboration. We listen to our partners and work
-            closely with them. We’re always engaging, searching for answers
-            and anticipating the challenges ahead. The sustainable materials
-            we develop today will enhance the quality of life for generations
-            to come.
-          </p>
-          <a href="#"
-            class="mt-10 bg-white text-[#198754] text-lg px-5 cursor-pointer select-none py-2 rounded-full">Learn
-            More</a>
-        </div>
-      </div>
-    </div>
-  </section>
 
+  <!-- 
   <section class="w-full overflow-hidden bg__primary fixed bottom-0 left-0 right-0">
     <div class="max-w-7xl m-auto px-3 py-7 flex justify-between gap-8 items-center">
       <p class="text-sm text-white tracking-wide">
@@ -329,8 +256,8 @@
         class="bg-white text__primary text-base px-5 cursor-pointer select-none py-2 rounded-full text-nowrap">Accept
         All</a>
     </div>
-  </section>
-  <footer class="bg__primary w-full py-8">
+  </section> -->
+  <footer class="bg-[#635209] w-full py-8">
     <div class="max-w-7xl m-auto px-3">
       <div class="flex flex-col gap-3 md:gap-1  md:flex-row justify-between items-center">
         <div class="flex justify-between items-center gap-8">
@@ -359,6 +286,8 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="../../js/main.js"></script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+  </script>
 </body>
 
 </html>

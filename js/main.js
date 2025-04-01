@@ -26,7 +26,7 @@ $(document).ready(function(){
         
         // If at the top of the page, keep the original background
         if (scrollTop === 0) {
-            header.style.backgroundColor = "rgba(0, 0, 0, 0.1)"; // Original color
+            // header.style.backgroundColor = "rgba(0, 0, 0, 0.1)"; // Original color
         } else {
             header.style.backgroundColor = "rgba(255, 255, 255, 1)"; // White background
         }
