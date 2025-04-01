@@ -19,8 +19,11 @@
     <header id="header"
       class="bg-[#fff] backdrop-blur-md z-20 w-full left-0 right-0 fixed top-0 transition-all duration-300">
       <nav class="max-w-7xl m-auto px-3 py-4 flex justify-between items-center">
-        <span><img src="../../asset/image/logo.png" height="auto" width="auto" alt="logo"
-            class="w-[150px] sm:w-[190px] md:w-[250px]" /></span>
+        <a href="/"><img src="../../asset/image/logo.png" height="auto" width="auto" alt="logo"
+            class="w-[150px] sm:w-[190px] md:w-[250px] hidden lg:inline-block" />
+            <img src="../../asset/image/logo0.png" height="auto" width="auto" alt="logo"
+            class="w-[46px] lg:hidden" />
+          </a>
         <ul class="flex gap-4 md:gap-8 justify-center items-center">
           <span class="overflow-hidden hidden md:inline-flex  rounded-full bg__light px-3 p-2  items-center">
             <input type="text" placeholder="Search"
@@ -29,7 +32,7 @@
           </span>
           <div class="dropdown">
             <button type="button" id="dropdown-btn"
-              class="text_dark bg__light overflow-hidden rounded-full cursor-pointer text-sm md:text-lg px-3 py-1 md:py-2">
+              class="text_dark bg__light overflow-hidden rounded-full cursor-pointer text-base md:text-lg px-3 py-2">
               EN <i class="fa-solid fa-globe text-sm md:text-lg text_dark ml-2"></i>
             </button>
 
@@ -43,7 +46,7 @@
           </li>
           <li>
             <button id="openSidebar"
-              class="text_dark bg__light overflow-hidden rounded-full cursor-pointer text-sm md:text-lg px-3 py-1 md:py-2">
+              class="text_dark bg__light overflow-hidden rounded-full cursor-pointer text-base md:text-lg px-3 py-2">
               Menu <i class="ml-2 fa-solid fa-bars text-sm md:text-lg text_dark"></i>
             </button>
           </li>
@@ -55,14 +58,15 @@
       <div
         class="absolute max-w-[700px] w-full z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center">
         <h2 class="text-4xl md:text-5xl lg:text-6xl text-white text-center font-bold mb-3">
-          Innovarting to build
-          <span class="text-center text__primary">a </span>
-          <span class="block text-center text__primary"> better world</span>
+          Cultivating a more 
+          <span class="text-center text__primary">fulfilling</span>
+          <span class="block text-center text__primary">human experience.</span>
         </h2>
         <p class="text-base tracking-wider font-medium text-center text-white px-20">
-          Eastman’s advances across industries such as agriculture, consumer
-          goods, personal care, transportation and textiles are helping
-          improve the quality of life for consumers around the world.
+          Quantum Group is leading to the fields where human beings require advancement across
+          industries like construction, Household &amp; Cleaning Solutions, agriculture, consumer goods,
+          personal care, transportation, Industrial Coatings, Printing Inks, Sealants textile &amp; Leather
+          and many more are improving the quality of life of consumers around the world.
         </p>
         <a href="#"
           class="mt-10 bg__primary text-dark hover:bg__dark text-lg px-5 cursor-pointer select-none py-2 rounded-full">Learn
@@ -70,7 +74,7 @@
       </div>
       <div class="home_slider w-[100vw] overflow-hidden">
         <div class="w-full">
-          <video autoplay loop muted playsinline width="100%" height="100vh">
+          <video autoplay loop muted playsinline width="100%" class="slider_video" height="100vh">
             <source src="../../asset/image/banner_video.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -119,31 +123,31 @@
 
 
 
-        <h3 class="text-2xl text_dark font-bold mb-2">Services</h3>
+        <h3 class="text-2xl text_dark font-bold mb-2">Links</h3>
         <ul class="mb-4">
           <li>
-            <a href="#" class="text_dark hover:underline text-lg transition-all duration-300 mb-1">
-              Agriculture <i class="fa-solid fa-arrow-right text-sm ml-2 "></i>
+            <a href="/src/page/index.html" class="text_dark hover:underline text-lg transition-all duration-300 mb-1">
+              Home <i class="fa-solid fa-arrow-right text-sm ml-2 "></i>
             </a>
           </li>
           <li>
-            <a href="#" class="text_dark hover:underline text-lg transition-all duration-300 mb-1">
-              Consumer Goods<i class="fa-solid fa-arrow-right text-sm ml-2 "></i>
+            <a href="/src/page/product.html" class="text_dark hover:underline text-lg transition-all duration-300 mb-1">
+              Product<i class="fa-solid fa-arrow-right text-sm ml-2 "></i>
             </a>
           </li>
           <li>
-            <a href="#" class="text_dark hover:underline text-lg transition-all duration-300 mb-1">
-              Personal Care<i class="fa-solid fa-arrow-right text-sm ml-2 "></i>
+            <a href="/src/page/markets.html" class="text_dark hover:underline text-lg transition-all duration-300 mb-1">
+             Markets<i class="fa-solid fa-arrow-right text-sm ml-2 "></i>
             </a>
           </li>
           <li>
-            <a href="#" class="text_dark hover:underline text-lg transition-all duration-300 mb-1">
-              Transportation<i class="fa-solid fa-arrow-right text-sm ml-2 "></i>
+            <a href="/src/page/contact-us.html" class="text_dark hover:underline text-lg transition-all duration-300 mb-1">
+              Contact us<i class="fa-solid fa-arrow-right text-sm ml-2 "></i>
             </a>
           </li>
           <li>
-            <a href="#" class="text_dark hover:underline text-lg transition-all duration-300 mb-1">
-              Textiles<i class="fa-solid fa-arrow-right text-sm ml-2 "></i>
+            <a href="/src/page/legal-information.html" class="text_dark hover:underline text-lg transition-all duration-300 mb-1">
+              Legal information<i class="fa-solid fa-arrow-right text-sm ml-2 "></i>
             </a>
           </li>
         </ul>
@@ -151,42 +155,36 @@
     </div>
 
   </section>
+
   <section class="w-full overflow-hidden py-10">
     <div class="max-w-7xl m-auto px-3 py-4">
-      <p class="text-lg text-center">Quantum Group is leading to the fields where human beings require advancement
-        across
-        industries like construction, Household &amp; Cleaning Solutions, agriculture, consumer goods,
-        personal care, transportation, Industrial Coatings, Printing Inks, Sealants textile &amp; Leather
-        and many more are improving the quality of life of consumers around the world.</p>
+      <p class="text-lg text-center">Quantum Group believe in teamwork to make the world sustainable for the future Therefore
+        Quantum Group Team and associated partners initiated a programme for make the world
+        with the future eyes such as; Water harvesting and planning to save clean water, treat
+        wastewater water etc. A greener world to minimize the global warming effect and contribute
+        to the world initiative.</p>
     </div>
   </section>
-
-
-
 
   <section class="w-full bg__primary mt-20 flex flex-col-reverse lg:grid lg:grid-cols-2   overflow-hidden">
     <div class="flex lg:justify-end py-16 lg:pt-16">
       <div class="max-w-[600px] flex flex-col items-start">
         <h2 class="text-5xl text-white text-left font-bold mb-3">
-          Transforming
-          <span class="text-white opacity-45">more than </span>
-          <span class="block text-left text-white opacity-45">
-            materials</span>
+          What we use today, tomorrow, 
+          <span class="text-white opacity-45">we think and create  next ones. </span>
+         
         </h2>
         <p class="text-base font-medium text-left mt-5 pr-10 text-white">
-          At Eastman, every insight, leading breakthrough and innovation is
-          achieved through collaboration. We listen to our partners and work
-          closely with them. We’re always engaging, searching for answers and
-          anticipating the challenges ahead. The sustainable materials we
-          develop today will enhance the quality of life for generations to
-          come.
+          Quantum team personally surveys to the every possible consumers and experienced of the
+          results where the technical team make its better and visualize the future requirements of the
+          society and industry needs.
         </p>
         <a href="#" class="mt-10 bg-white text__primary text-lg px-5 cursor-pointer select-none py-2 rounded-full">Learn
           More</a>
       </div>
     </div>
     <div>
-      <img src="https://images.freekaamaal.com/sticky/1743229923_c741d4f38ae4be602699.webp"
+      <img src="../../asset/image/home_image_1.jpg"
         class="w-full cover min-h-[460px]" alt="image" />
     </div>
   </section>
@@ -194,7 +192,7 @@
   <section class="w-full mt-20 lg:grid grid-cols-8 lg:h-[300px] overflow-hidden">
     <div class="bg__danger col-span-2"></div>
     <div class="flex justify-start lg:justify-end pt-16 col-span-3 relative">
-      <img src="https://images.freekaamaal.com/sticky/1743229923_c741d4f38ae4be602699.webp"
+      <img src="../../asset/image/home_image_2.jpg"
         class="w-[300px] h-auto absolute -left-[200px] hidden lg:inline  " alt="image" />
       <h2 class="text-5xl lg:ml-20 mr-10 pr-16 text__danger text-left font-bold mb-3">
         Materials that <br />
@@ -215,7 +213,7 @@
 
   <section class="w-full mt-20 lg:grid grid-cols-6 lg:h-[700px]   overflow-hidden">
     <div class="bg-gray-200 hidden lg:block col-span-2 relative">
-      <img src="https://images.freekaamaal.com/featured_images/150163_fff(41).jpg"
+      <img src="../../asset/image/home_image_3.jpg"
         class="w-full top-[100px] h-[500px] absolute left-[100px]" alt="image" />
     </div>
     <div class=" hidden lg:flex justify-end pt-16 col-span-1 relative "></div>
@@ -261,11 +259,13 @@
     <div class="max-w-7xl m-auto px-3">
       <div class="flex flex-col gap-3 md:gap-1  md:flex-row justify-between items-center">
         <div class="flex justify-between items-center gap-8">
-          <a href="#" class="text-base text-white">About</a>
-          <a href="#" class="text-base text-white">Contact</a>
-          <a href="#" class="text-base text-white">Press</a>
-          <a href="#" class="text-base text-white">Careers</a>
-          <a href="#" class="text-base text-white">Help</a>
+          <div class="flex justify-between items-center gap-8">
+            <a href="/src/page/index.html" class="text-base text-white">Home</a>
+            <a href="/src/page/contact-us.html" class="text-base text-white">Contact us</a>
+            <a href="/src/page/legal-information.html" class="text-base text-white">Legal Information</a>
+            <a href="/src/page/markets.html" class="text-base text-white">Markets</a>
+            <a href="/src/page/product.html" class="text-base text-white">Product</a>
+        </div>
         </div>
         <div class="flex gap-5">
           <a href="#" class="text-2xl text-white"><i class="fa-brands fa-facebook"></i></a>
@@ -277,9 +277,8 @@
       </div>
       <div class="h-[1px] bg-white w-full my-6"></div>
       <p class="text-sm md:text-left text-center text-white">
-        © 2025 Eastman Chemical Company or its subsidiaries. All rights
-        reserved. As used herein, ® denotes registered trademark status in the
-        U.S. only.
+        © 2025 Quantum Chemical Company or its subsidiaries. All rights
+        reserved. As used herein, ® denotes registered trademark.
       </p>
     </div>
   </footer>
