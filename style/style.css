@@ -88,10 +88,11 @@ body {
 .text__primary { color: var(--primary-color); }
 .text__danger { color: var(--danger-color); }
 .text__warning { color: var(--warning-color); }
-
+.text__info { color: var(--info-color); }
 .text__light { color: var(--light-color); }
 .text_dark { color: var(--text-color); }
 .text__background { color: var(--background-color); }
+.text__breadcrumb { color: var(--breadcrumb-color); }
 
 /* Border Colors */
 .border__primary { border: 2px solid var(--primary-color); }
@@ -100,6 +101,9 @@ body {
 .border__light { border: 2px solid var(--light-color); }
 .border__dark { border: 2px solid var(--text-color); }
 .border__background { border: 2px solid var(--background-color); }
+
+/* Gradient Colors */
+.lineargradient_imageForBg {background:linear-gradient(66deg,#000 .06%,transparent 77.83%)}
 
 .btn{
     background: #fff;
