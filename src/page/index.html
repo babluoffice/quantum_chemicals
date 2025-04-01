@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eastman</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="../output.css" />
+  <link rel="stylesheet" href="../../style/style.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+
+<body class="">
+  <section class="w-full overflow-hidden">
+    <header id="header"
+      class="bg-[rgba(0,0,0,.1)] backdrop-blur-md z-20 w-full left-0 right-0 fixed top-0 transition-all duration-300">
+      <nav class="max-w-7xl m-auto px-3 py-4 flex justify-between items-center">
+        <span><img src="../../asset/image/eastman-logo.png" height="auto" width="250px" alt="logo"
+            class="w-[150px] sm:w-[190px] md:w-[250px]" /></span>
+        <ul class="flex gap-4 md:gap-8 justify-center items-center">
+          <span class="overflow-hidden hidden md:inline-flex  rounded-full bg__light px-3 p-2  items-center">
+            <input type="text" placeholder="Search"
+              class="duration-300 ease-in-out search_home ml-2 outline-none text-lg w-[160px] focus:w-[250px] text__primary transition-all" />
+            <i class="fa-solid fa-magnifying-glass text-lg text_dark transition-opacity duration-300 ease-in-out"></i>
+          </span>
+          <div class="dropdown">
+            <button type="button" id="dropdown-btn"
+            class="text__primary bg__light overflow-hidden rounded-full cursor-pointer text-sm md:text-lg px-3 py-1 md:py-2">
+            EN <i class="fa-solid fa-globe text-sm md:text-lg text_dark ml-2"></i>
+          </button>
+
+          <div class="dropdown-content" id="dropdown-content">
+            <div data-value="en">English</div>
+            <div data-value="fr">Français</div>
+            <div data-value="es">Español</div>
+            <div data-value="de">Deutsch</div>
+          </div>
+          </div>
+          
+          </li>
+          <li>
+            <button id="openSidebar"
+              class="text__primary bg__light overflow-hidden rounded-full cursor-pointer text-sm md:text-lg px-3 py-1 md:py-2">
+              Menu <i class="ml-2 fa-solid fa-bars text-sm md:text-lg text_dark"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="relative home_slider_container">
+      <div style="z-index: 2" class="absolute top-0 left-0 right-0 bottom-0 bg-[rgba(0,0,0,.3)]"></div>
+      <div
+        class="absolute max-w-[700px] w-full z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col justify-center items-center">
+        <h2 class="text-4xl md:text-5xl text-white text-center font-bold mb-3">
+          Innovarting to build
+          <span class="text-center text__primary">a </span>
+          <span class="block text-center text__primary"> better world</span>
+        </h2>
+        <p class="text-base font-medium text-center text-white px-10">
+          Eastman’s advances across industries such as agriculture, consumer
+          goods, personal care, transportation and textiles are helping
+          improve the quality of life for consumers around the world.
+        </p>
+        <a href="#"
+          class="mt-10 bg__primary text-white hover:bg__dark text-lg px-5 cursor-pointer select-none py-2 rounded-full">Learn
+          More</a>
+      </div>
+      <div class="home_slider w-[100vw] overflow-hidden">
+        <div class="w-full">
+          <img src="https://images.freekaamaal.com/sticky/1743229923_c741d4f38ae4be602699.webp" class="h-[100vh] w-full"
+            alt="image" />
+        </div>
+        <div class="w-full">
+          <img src="https://images.freekaamaal.com/sticky/1743229923_c741d4f38ae4be602699.webp" class="h-[100vh] w-full"
+            alt="image" />
+        </div>
+        <div class="w-full">
+          <img src="https://images.freekaamaal.com/sticky/1743229923_c741d4f38ae4be602699.webp" class="h-[100vh] w-full"
+            alt="image" />
+        </div>
+        <div class="w-full">
+          <img src="https://images.freekaamaal.com/sticky/1743229923_c741d4f38ae4be602699.webp" class="h-[100vh] w-full"
+            alt="image" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sidebar"
+    class="fixed top-0 left-0 h-[100vh] bg-white w-full z-20 transform -translate-x-full transition-transform duration-300 ease-in-out">
+    <div class="max-w-7xl m-auto px-3 py-4">
+      <button id="closeSidebar"
+        class="text_dark overflow-hidden absolute right-5 md:right-24 top-5 md:top-12  cursor-pointer  p-3 ">
+        <i class="fa-solid fa-xmark text-3xl"></i>
+      </button>
+
+
+
+      <div class="pt-12">
+
+
+        <span class="overflow-hidden inline-flex mb-20  md:hidden  rounded-full bg__light px-3 p-2  items-center">
+          <i class="fa-solid fa-magnifying-glass text-lg text_dark transition-opacity duration-300 ease-in-out"></i>
+          <input type="text" placeholder="Search"
+            class="duration-300 ease-in-out search_home ml-2 outline-none text-lg w-[160px] focus:w-[250px] text__primary transition-all" />
+
+        </span>
+
+
+
+
+        <h3 class="text-2xl text_dark font-bold mb-2">Services</h3>
+        <ul class="mb-4">
+          <li>
+            <a href="#" class="text_dark hover:underline text-lg transition-all duration-300 mb-1">
+              Agriculture <i class="fa-solid fa-arrow-right text-sm ml-2 "></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text_dark hover:underline text-lg transition-all duration-300 mb-1">
+              Consumer Goods<i class="fa-solid fa-arrow-right text-sm ml-2 "></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text_dark hover:underline text-lg transition-all duration-300 mb-1">
+              Personal Care<i class="fa-solid fa-arrow-right text-sm ml-2 "></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text_dark hover:underline text-lg transition-all duration-300 mb-1">
+              Transportation<i class="fa-solid fa-arrow-right text-sm ml-2 "></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text_dark hover:underline text-lg transition-all duration-300 mb-1">
+              Textiles<i class="fa-solid fa-arrow-right text-sm ml-2 "></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+  <section class="w-full overflow-hidden">
+    <div class="max-w-7xl m-auto px-3 py-4">
+      <h2 class="text-4xl md:text-5xl font-bold text_dark py-3 border-b-[1px] border-[#005695] mb-5">
+        Eastman at a glance
+      </h2>
+      <div class="flex justify-start gap-3 overflow-x-auto overflow-y-hidden w-full hide_scroolvar">
+        <div
+          class="flex gap-3 group justify-between items-start transition-transform duration-300 hover:scale-110 p-2 w-[300px] ">
+          <img src="https://images.freekaamaal.com/sticky/1743229923_c741d4f38ae4be602699.webp"
+            class="max-w-[120px] transition-transform duration-300 group-hover:scale-110" />
+
+          <h3
+            class="line-clamp-3 text-base text_dark font-thin relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-300 group-hover:after:w-full group-hover:underline">
+            Eight specialty PET resins from Eastman receive RecyClass Approval
+          </h3>
+        </div>
+        <div
+          class="flex gap-3 group justify-between items-start transition-transform duration-300 hover:scale-110 p-2 w-[300px] ">
+          <img src="https://images.freekaamaal.com/sticky/1743229923_c741d4f38ae4be602699.webp"
+            class="max-w-[120px] transition-transform duration-300 group-hover:scale-110" />
+
+          <h3
+            class="line-clamp-3 text-base text_dark font-thin relative after:block after:h-[2px] after:bg-black after:w-0 after:transition-all after:duration-300 group-hover:after:w-full group-hover:underline">
+            Eight specialty PET resins from Eastman receive RecyClass Approval
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="w-full bg__primary mt-20 flex flex-col-reverse lg:grid lg:grid-cols-2   overflow-hidden">
+    <div class="flex lg:justify-end py-16 lg:pt-16">
+      <div class="max-w-[600px] flex flex-col items-start">
+        <h2 class="text-5xl text-white text-left font-bold mb-3">
+          Transforming
+          <span class="text-white opacity-45">more than </span>
+          <span class="block text-left text-white opacity-45">
+            materials</span>
+        </h2>
+        <p class="text-base font-medium text-left mt-5 pr-10 text-white">
+          At Eastman, every insight, leading breakthrough and innovation is
+          achieved through collaboration. We listen to our partners and work
+          closely with them. We’re always engaging, searching for answers and
+          anticipating the challenges ahead. The sustainable materials we
+          develop today will enhance the quality of life for generations to
+          come.
+        </p>
+        <a href="#" class="mt-10 bg-white text__primary text-lg px-5 cursor-pointer select-none py-2 rounded-full">Learn
+          More</a>
+      </div>
+    </div>
+    <div>
+      <img src="https://images.freekaamaal.com/sticky/1743229923_c741d4f38ae4be602699.webp"
+        class="w-full cover min-h-[460px]" alt="image" />
+    </div>
+  </section>
+
+  <section class="w-full mt-20 lg:grid grid-cols-8 lg:h-[300px] overflow-hidden">
+    <div class="bg__danger col-span-2"></div>
+    <div class="flex justify-start lg:justify-end pt-16 col-span-3 relative">
+      <img src="https://images.freekaamaal.com/sticky/1743229923_c741d4f38ae4be602699.webp"
+        class="w-[300px] h-auto absolute -left-[200px] hidden lg:inline  " alt="image" />
+      <h2 class="text-5xl lg:ml-20 mr-10 pr-16 text__danger text-left font-bold mb-3">
+        Materials that <br />
+        create <br />
+        possibilities
+      </h2>
+    </div>
+    <div class="flex flex-col items-start col-span-3">
+      <p class="text-base font-medium text-left mt-10 pr-24 text-dark">
+        Search for sustainable plastics, coatings, adhesives, safety documents
+        and brands, including Eastman Tritan™ copolyester, Cristal™
+        copolyester and Naia™ cellulosic fibers.
+      </p>
+      <a href="#" class="mt-10 bg__danger text-white text-lg px-5 cursor-pointer select-none py-2 rounded-full">Search
+        products</a>
+    </div>
+  </section>
+
+  <section class="w-full mt-20 lg:grid grid-cols-6 lg:h-[700px]   overflow-hidden">
+    <div class="bg-gray-200 hidden lg:block col-span-2 relative">
+      <img src="https://images.freekaamaal.com/featured_images/150163_fff(41).jpg"
+        class="w-full top-[100px] h-[500px] absolute left-[100px]" alt="image" />
+    </div>
+    <div class=" hidden lg:flex justify-end pt-16 col-span-1 relative "></div>
+    <div class="flex flex-col pt-10 lg:pt-32 items-start col-span-3">
+      <h2 class="text-5xl pr-16 text__primary text-left font-bold mb-3">
+        2024 Sustainability <br />
+        Report: A Better Circle
+      </h2>
+      <p class="text-lg font-medium text-left mt-10 text-dark max-w-[500px]">
+        Read about our progress toward becoming a world-leading materials
+        innovation company, along with updates on Eastman’s sustainability
+        goals related to mitigating climate change, mainstreaming circularity
+        and caring for society.
+      </p>
+      <a href="#" class="mt-10 text-base underline text_dark cursor-pointer select-none py-2">View 2025 report <i
+          class="fa-solid fa-arrow-down ml-2"></i></a>
+    </div>
+  </section>
+
+  <section class="w-full bg-gray-100 py-10 mt-20 overflow-hidden">
+    <div class="max-w-7xl m-auto px-3 py-4">
+      <div class="flex justify-between items-center">
+        <h2 class="text-5xl font-bold text_dark py-3 border-b-[1px] border-[#005695] mb-5">
+          Latest news
+        </h2>
+        <a href="#">See all news <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-5 gap-10">
+        <div
+          class="flex group gap-3 cursor-pointer flex-col rounded-md overflow-hidden bg-white justify-between items-start transition-transform duration-300">
+          <img src="https://images.freekaamaal.com/sticky/1743229923_c741d4f38ae4be602699.webp"
+            class="w-full transition-transform" />
+          <div class="p-3">
+            <h3 class="text-dark text-2xl font-medium mb-3">
+              Six Months after Hurricane Helene Eastman team still providing
+              help
+            </h3>
+            <p class="text-sm group-hover:underline text-gray-400 tracking-wide line-clamp-6 mb-4">
+              After days of cutting trails, backpacking in supplies and doing
+              anything he could to help mountain residents cut off from the
+              outside world after Hurricane Helene, Josh Callahan was
+              exhausted. When he pulled into the parking lot for work at
+              Eastman’s Kingsport, Tennessee, manufacturing site, he finally
+              broke down. All he could think of was relatives without power or
+              access to water. They desperately needed gasoline for generators
+              to power their well pumps.
+            </p>
+            <p class="text-sm text-gray-700 tracking-wide">March 27, 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full mt-20 lg:grid grid-cols-2 lg:h-[110vh] overflow-hidden">
+    <div
+      class="col-span-1 relative bg-[url('https://images.freekaamaal.com/featured_images/150163_fff(41).jpg')] bg-no-repeat bg-center bg-cover h-[50vh] lg:h-auto">
+    </div>
+
+    <div class="bg-[#198754]">
+      <div
+        class="relative bg-[url('https://images.freekaamaal.com/featured_images/150163_fff(41).jpg')] bg-no-repeat bg-center bg-cover h-[60vh]">
+      </div>
+      <div class="flex justify-center py-16 ">
+        <div class="max-w-[600px] flex flex-col items-start">
+          <h2 class="text-5xl text-white text-left font-bold mb-3">
+            Transforming
+            <span class="text-white opacity-45">more than </span>
+            <span class="block text-left text-white opacity-45">
+              materials</span>
+          </h2>
+          <p class="text-base font-medium text-left mt-5 pr-10 text-white">
+            At Eastman, every insight, leading breakthrough and innovation is
+            achieved through collaboration. We listen to our partners and work
+            closely with them. We’re always engaging, searching for answers
+            and anticipating the challenges ahead. The sustainable materials
+            we develop today will enhance the quality of life for generations
+            to come.
+          </p>
+          <a href="#"
+            class="mt-10 bg-white text-[#198754] text-lg px-5 cursor-pointer select-none py-2 rounded-full">Learn
+            More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full overflow-hidden bg__primary fixed bottom-0 left-0 right-0">
+    <div class="max-w-7xl m-auto px-3 py-7 flex justify-between gap-8 items-center">
+      <p class="text-sm text-white tracking-wide">
+        This site uses cookies. By clicking “Accept All Cookies” you agree to
+        store cookies on your device to enhance site navigation, analyze site
+        usage and assist in our marketing efforts. You may customize your
+        cookies by clicking “Customize Cookies”. It is Eastman’s current
+        policy to not sell your personal data. To learn about our Privacy
+        Notice click <a href="" class="underline">here</a>
+      </p>
+      <a href="#"
+        class="bg-white text__primary text-base px-5 cursor-pointer select-none py-2 rounded-full text-nowrap">Reject
+        All</a>
+      <a href="#"
+        class="bg-white text__primary text-base px-5 cursor-pointer select-none py-2 rounded-full text-nowrap">Accept
+        All</a>
+    </div>
+  </section>
+  <footer class="bg__primary w-full py-8">
+    <div class="max-w-7xl m-auto px-3">
+      <div class="flex flex-col gap-3 md:gap-1  md:flex-row justify-between items-center">
+        <div class="flex justify-between items-center gap-8">
+          <a href="#" class="text-base text-white">About</a>
+          <a href="#" class="text-base text-white">Contact</a>
+          <a href="#" class="text-base text-white">Press</a>
+          <a href="#" class="text-base text-white">Careers</a>
+          <a href="#" class="text-base text-white">Help</a>
+        </div>
+        <div class="flex gap-5">
+          <a href="#" class="text-2xl text-white"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="text-2xl text-white"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="text-2xl text-white"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="text-2xl text-white"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" class="text-2xl text-white"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="h-[1px] bg-white w-full my-6"></div>
+      <p class="text-sm md:text-left text-center text-white">
+        © 2025 Eastman Chemical Company or its subsidiaries. All rights
+        reserved. As used herein, ® denotes registered trademark status in the
+        U.S. only.
+      </p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="../../js/main.js"></script>
+</body>
+
+</html>
